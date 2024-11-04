@@ -1,0 +1,275 @@
+/*font-family: Open Sans, Arial, sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    font-family: "Open Sans", sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /*outline:1px solid green;*/
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Roboto Slab", serif;
+}
+
+body{
+    background-color: rgb(255, 250, 242);
+  }
+  h1{
+      padding-top:30px;
+      color:  #222275;
+      font-size: 3rem;
+      text-align: center;
+  }
+  h2{
+    color:  #222275;
+      font-size: 2rem;
+      text-align: center;
+  }
+
+
+.header{
+    background-color: #4a9ed3;
+    padding:10px;
+    list-style: none;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    display:flex;
+    justify-content: space-between;/*para que queden espaciados*/
+    align-items: center;/*para centrar verticalmente*/
+    height: 18vh;
+    .imgLogo{
+        width:200px;
+    }
+    .navegacion{
+        width:50%;
+        ul{
+            display:flex;
+            justify-content: space-evenly;
+            list-style: none;
+            width:100%;
+            li{
+                a{
+                    text-decoration:none;
+                    color:  #222275;
+                    font-size: 1.5rem;
+                }
+
+            }
+            
+        }
+
+    }
+    
+}
+
+/*Estilos seccion principal del index*/
+
+main{
+    .principalIndex{
+        background-image: url("../assets/img/yo.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center center;
+        height: 80vh;
+        text-align: center;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        .contenedorTextoPrincipalIndex{
+            display:flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            margin:0 auto;
+            /*margin-top: 30px;
+            /*border:2px solid  #222275;*/
+            padding:10px;
+            border-radius: 75px;
+            text-align: center;
+            width: 60%;
+            /*font-size: 0.75rem;*/
+            color:  #efeffa;
+            backdrop-filter: blur(15px);
+
+            p{
+                font-size: 1.5rem;
+                
+            }
+            a{
+                display:inline-block;
+                margin-top:20px;
+                text-decoration: none;
+                color:  #efeffa;
+                font-size: 1rem;
+                font-weight: bold;
+                border:1px solid #222275;
+                padding:8px;
+                border-radius:5px;
+                box-shadow: -10px 0px 35px 12px rgba(0,0,0,0.66);
+    
+            }
+        }
+       
+    }
+    .sectionKits{
+        background-color: rgb(208, 224, 240);
+        padding:15px;
+        .galeriaKits{
+            margin-top: 15px;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            .kits{
+                display: flex;
+                text-align: center;
+                background-color: rgb(200, 214, 232);
+                border: 1px solid rgb(20, 53, 244);
+                color: #222275;
+                width: 320px;
+                height: 320px;
+                
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content:flex-start;
+                align-items: center;
+                .imgKits{
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                   
+                    width: 100%;
+                    height: 75%;
+                        }
+                a{
+                    display:inline-block;
+                    margin-top:2px;
+                    text-decoration: none;
+                    color: rgb(14, 13, 13);
+                    /*background-color: #4a9ed3;*/
+                    font-size: 1em;
+                    font-weight: bold;
+                    border:2px solid #222275;
+                    padding:4px;
+                    border-radius:5px;
+                    
+                }
+          
+          
+        }
+    
+    }
+  }
+  .varios{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    .experimenta{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        img{
+            width:60%;
+        }
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+}
+}
+
+.footer{
+    display:flex;
+    background-color: #a6643b80;
+    justify-content: space-evenly;/*para que queden espaciados*/
+    align-items: center;/*para centrar verticalmente*/
+    gap:25px;
+    padding-bottom: 25px;
+    .logoFooter{
+        width:25%;
+        
+        .logo{
+            width: 200px;
+        }
+    }
+    .contenidos{
+        display: flex;
+    /* flex-direction: column; */
+    
+    width: 25%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+        ul{
+            
+            list-style: none;
+            width:100%;
+            li{
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                a{                    
+                    text-decoration:none;
+                    color:  #222275;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .conectateFooter{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        .centroflex{
+            display:flex;
+            flex-direction: column;
+            justify-content:space-between;
+            align-items: center;
+            gap:10px;
+            width:100%;
+            .redes{
+                display:flex;
+                gap:10px;
+                a{
+                    /*display:flex;
+                    /*flex-direction: column;*/
+                    /*align-items: center;*/
+                    text-decoration:none;
+                    color:  #222275;
+                    font-size: 2rem;
+                    }
+
+            }
+            
+
+            }
+        }
+    }
+.fa-whatsapp{
+    color:#25D366;
+    font-size: 4em;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+
+
+
+
+
