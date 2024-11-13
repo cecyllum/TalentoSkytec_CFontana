@@ -65,8 +65,19 @@ body{
     }
     
 }
+/* Estilos para cuando achico la pantalla en el header */
+@media screen and (max-width: 768px) {
+    .listaItems{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 10px 0;
+        font-size: 0.3rem;
+    }
+}
 
-/*Estilos seccion principal del index*/
+
+/*Estilos para el main del index*/
 
 main{
     .principalIndex{
@@ -99,7 +110,7 @@ main{
             backdrop-filter: blur(15px);
 
             p{
-                font-size: 1.5rem;
+                font-size: 1rem;
                 
             }
             a{
@@ -190,7 +201,12 @@ main{
     }
 }
 }
-
+/*responsive para el main*/
+@media screen and (max-width: 768px){
+    .contenedorTextoPrincipalIndex{
+        font-size:0.3rem;
+    }
+}
 .footer{
     display:flex;
     background-color: #a6643b80;
@@ -198,24 +214,23 @@ main{
     align-items: center;/*para centrar verticalmente*/
     gap:25px;
     padding-bottom: 25px;
+    h3{
+        font-size: 1rem;
+    }
     .logoFooter{
         width:25%;
-        
         .logo{
             width: 200px;
         }
     }
     .contenidos{
         display: flex;
-    /* flex-direction: column; */
-    
-    width: 25%;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+        width: 25%;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
         ul{
-            
             list-style: none;
             width:100%;
             li{
@@ -251,37 +266,35 @@ main{
                     text-decoration:none;
                     color:  #222275;
                     font-size: 2rem;
-                    }
+                }
 
             }
-            
-
-            }
+        }
         .suscripcion{
-            .form{
-                width: 300px;
+            .formSus{
                 margin: 0 auto;
                 padding: 20px;
                 background-color: #ebf0f0;
                 border-radius: 5px;
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-                label {
-                    display: block;
-                    margin-bottom: 5px;
-                }
-                .botonSus {
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: center;
+                align-content: stretch;
+                flex-direction: column;
+                .botonSus{
                     background-color:#2b455c;
                     color: #fff;
                     padding: 10px 20px;
-                    margin:0 auto;
+                    margin:10px;
                     border: none;
                     border-radius: 3px;
                     cursor: pointer;
                 }
             }
         }    
-        }
     }
+}
 .fa-whatsapp{
     color:#25D366;
     font-size: 4em;
@@ -291,9 +304,7 @@ main{
 }
 /*formulario*/
 .bodyFormulario {
-    
-    background-color: #f2f2f2;
-
+   background-color: #f2f2f2;
 }
 
 .form {
