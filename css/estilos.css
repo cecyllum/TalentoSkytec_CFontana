@@ -67,6 +67,11 @@ body{
 }
 /* Estilos para cuando achico la pantalla en el header */
 @media screen and (max-width: 768px) {
+    .header{
+        height: initial;
+    }
+}
+@media screen and (max-width: 768px) {
     .listaItems{
         flex-direction: column;
         align-items: center;
@@ -207,6 +212,7 @@ main{
         font-size:0.3rem;
     }
 }
+/*Estilos Footer*/
 .footer{
     display:flex;
     background-color: #a6643b80;
@@ -260,12 +266,9 @@ main{
                 display:flex;
                 gap:10px;
                 a{
-                    /*display:flex;
-                    /*flex-direction: column;*/
-                    /*align-items: center;*/
-                    text-decoration:none;
-                    color:  #222275;
-                    font-size: 2rem;
+                  text-decoration:none;
+                  color:  #222275;
+                  font-size: 2rem;
                 }
 
             }
@@ -302,18 +305,33 @@ main{
     bottom: 20px;
     right: 20px;
 }
-/*formulario*/
+
+/* Estilos Formulario*/
 .bodyFormulario {
    background-color: #f2f2f2;
+   margin-bottom: 20px;
+   h1{
+    font-size: 1rem;
+   }
+   h2{
+    font-size: 0.5rem;
+   }
 }
 
 .form {
+    background-image: url("../assets/img/despegue1xx.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+    color:#ffffff;
     width: 400px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
+    padding: 30px;
+    /*background-color: #fff;*/
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    margin-top: 10px;
     label {
         display: block;
         margin-bottom: 5px;
@@ -325,6 +343,15 @@ main{
         border: 1px solid #ccc;
         border-radius: 3px;
     }
+    fieldset{
+        padding:8px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
     .botonCont {
         background-color:#222275;
         color: #fff;
@@ -332,10 +359,59 @@ main{
         border: none;
         border-radius: 3px;
         cursor: pointer;
+        width:70%;
+    }
+}
+
+/*estilos Galeria de productos*/
+.contenedorKits{
+    background-color: rgb(208, 224, 240);
+    padding:15px;
+    .muestrasKits{
+        margin-top: 15px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        .productoskits{
+            display: flex;
+            text-align: center;
+            background-color: rgb(200, 214, 232);
+            border: 1px solid rgb(20, 53, 244);
+            color: #222275;
+            width: 320px;
+            height: 420px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content:flex-start;
+            align-items: center;
+            .imgKits{
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                width: 100%;
+                height: 75%;
+                padding:10px;
+                    }
+            a{
+                display:inline-block;
+                margin-top:2px;
+                text-decoration: none;
+                color: rgb(14, 13, 13);
+                background-color: #4a9ed3;
+                font-size: 1em;
+                font-weight: bold;
+                padding:4px;
+                border-radius:5px;
+                
+            }
+      
+      
     }
 
-
-
+}
 }
 
 
