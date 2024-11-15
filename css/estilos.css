@@ -183,11 +183,12 @@ main{
     }
   }
   .varios{
-    background-color: #d6cadd;
+    background-color: #a8bfe4;
     display:flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    padding-bottom: 5px;
     .experimenta{
         display:flex;
         flex-direction: column;
@@ -195,12 +196,61 @@ main{
         justify-content: center;
         align-items: center;
         img{
-            width:60%;
+            width:30%;
         }
+        a{
+            padding:10px;
+            border-radius: 10px;
+            color:white;
+            background-color: #2b455c;
+            text-decoration: none;
+            font-size: 0.80rem;
+            cursor: pointer;
+        }
+    }
+    .educacion{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        img{
+            width:50%;
+        }
+        a{
+            padding:10px;
+            border-radius: 10px;
+            color:white;
+            background-color: #2b455c;
+            text-decoration: none;
+            font-size: 0.80rem;
+            cursor: pointer;
+        }
+
+    }
+    #encontranos{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        a{
+            padding:10px;
+            border-radius: 10px;
+            color:white;
+            background-color: #2b455c;
+            text-decoration: none;
+            font-size: 0.80rem;
+            cursor: pointer;
+        }
+
     }
 
     h2{
         font-size: 1rem;
+    }
+    p{
+        color:rgb(236, 104, 104);
     }
 }
 }
@@ -369,6 +419,18 @@ main{
         cursor: pointer;
         width:70%;
     }
+}
+/*Estilos para el mapa de la página de Contactos*/
+.mapa{
+    display:flex;
+    justify-content: center;
+    margin: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 50vh;
+
+    
 }
 
 /*estilos Galeria de productos*/
