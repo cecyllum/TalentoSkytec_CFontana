@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SKYTEC | A volar |carrito</title>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <!--<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">-->
     <script src="https://kit.fontawesome.com/e3c6a02624.js" crossorigin="anonymous"></script>
+    <!--<link rel="stylesheet" href="../css/bootstrap.min.css">-->
     <link rel="stylesheet" href="../css/estilos.css">
     <!-- favicon icono-->
 </head>
@@ -30,7 +31,23 @@
     </nav>
 </header>
   <main>
-    <h1>CARRITO DE COMPRAS</h1>
+    <section class="contCarrito">
+      <h1>Carrito de Productos</h1>
+      <table class="tabla table-striped">
+          <thead>
+              <tr>
+                  <th>Producto</th>
+                  <th>Precio</th>
+              </tr>
+          </thead>
+          <tbody id="tablaCarrito">
+              <!-- JS se encarga de llenar esta parte -->
+          </tbody>
+      </table>
+      <div class="totalC">
+          <h3>Total: $<span id="totalCarrito">0.00</span></h3>
+      </div>
+    </section>
 
   </main>
   <footer class="footer">
@@ -93,15 +110,8 @@
       <i class="fab fa-whatsapp"></i>
   </a>
 </div>
-<!--
-<div>
-  <a href="#header">Ir arriba</a>
-</div>
-<div>
-  <p>&copy; 2024 Cohetes volando. Todos los derechos reservados.</p>
-</div> -->
-
-
   </footer>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/mostrar_carrito.js"></script>
 </body>
 </html>
