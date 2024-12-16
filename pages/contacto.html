@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SKYTEC | A volar |contacto</title>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <!--<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">-->
     <script src="https://kit.fontawesome.com/e3c6a02624.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilos.css">
@@ -33,40 +33,41 @@
   <main>
     <h1>Contacto</h1>
     <h2>Complete este formulario para que podamos ayudarlo</h2>
-    <div class="formContacto">
-   
-    <form class="form" action="mailto:tu_correo@ejemplo.com" method="post" enctype="text/plain">
-      <div>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Ingresar sólo nombre" required>
-      </div>
-      <div>
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" placeholder="Ingresar sólo apellido" required>
-      </div>  
-      <div>
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" placeholder="usuario@gmail.com" required>
-      </div>
-      <div>
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-      </div>
-<!--
-        <button class="botonCont"type="submit">Enviar</button>
-    -->
-    <div>
-      <fieldset class="grupoCampos">
-          <legend>Grabe o limpie el formulario</legend>
-          <input class="botonCont" type="button" value="Cancelar">
-          <!--<button class=>Enviar</button>-->
-          <input class="botonCont" id="enviar" type="submit" value="Enviar">
-          <input class="botonCont" id="reset" type="reset" value="Limpiar">
-      </fieldset>
-  </div>
-    </form>
+    <section class="formContacto">
+      <form class="form" action="" id="miFormulario">
 
-    </div> 
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ingresar sólo nombre">
+          <small class="errorForm" id="errorNombre">Recordá que tu nombre es obligatorio</small>
+        </div>
+        <div>
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" name="apellido" placeholder="Ingresar sólo apellido">
+          <small class="errorForm" id="errorNombre">Recordá que tu apellido es obligatorio</small>
+        </div>  
+
+        <div>
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" placeholder="usuario@gmail.com">
+          <small class="errorForm" id="errorMail">Revisa que el mail esté escrito correctamente</small>
+
+        </div>
+        <div>
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+          <small class="errorForm" id="errorMensaje">El mensaje debe contener al menos 10 caracteres</small>
+        </div>
+
+        <div>
+          <input class="botonCont" type="submit" value="Enviar">
+          <input class="botonCont" type="reset" value="Limpiar">
+
+        </div>
+      </form>  
+
+    </section>
+
     <div class="mapa">
       <h3>NUESTRO CAMPO DE VUELO</h3>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.3039249701797!2d-58.33955548830622!3d-34.84767487031059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32ae35a29916b%3A0xd4921724bde28ed4!2sDon%20Facundo%20Eventos!5e1!3m2!1ses-419!2sar!4v1731686851787!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -134,15 +135,8 @@
       <i class="fab fa-whatsapp"></i>
   </a>
 </div>
-<!--
-<div>
-  <a href="#header">Ir arriba</a>
-</div>
-<div>
-  <p>&copy; 2024 Cohetes volando. Todos los derechos reservados.</p>
-</div> -->
-
 
   </footer>
+  <script src="../js/validacion.js"></script>
 </body>
 </html>
