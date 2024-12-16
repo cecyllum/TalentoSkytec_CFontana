@@ -422,9 +422,12 @@ main{
     }
 }
 .errorForm{
-    color:red;
     display:none;
     font-size: 0.5rem;
+}
+
+small{
+    color:red;
 }
 /*Estilos para el mapa de la página de Contactos*/
 .mapa{
