@@ -19,7 +19,8 @@ body{
   }
   h1{
       padding-top:30px;
-      color:  #222275;
+      color: rgb(244, 240, 240);
+      text-shadow: 10px 5px 7px #222275; 
       font-size: 3rem;
       text-align: center;
   }
@@ -86,7 +87,7 @@ body{
 
 main{
     .principalIndex{
-        background-image: url("../assets/img/yo.jpg");
+        background-image: url("../assets/img/skytec1.JPG");
         background-size: cover;
         background-repeat: no-repeat;
         background-position:center center;
@@ -486,7 +487,6 @@ main{
 /*estilos tabla del carrito*/
 /* Título de la sección */
 .contCarrito{
-    
     h1{
         margin-bottom: 20px;
         text-align: center;
@@ -495,7 +495,7 @@ main{
     }
   }
   
-  /* Estilos para la tabla */
+  /* Estilos para la tabla del carrito */
   /* Contenedor principal */
 .contCarrito {
     max-width: 800px;
@@ -552,7 +552,10 @@ main{
     color: #fff;
     font-weight: bold;
     border-radius: 10px;
-    
-
+    border:rgb(231, 64, 64);    
+  }
+  .btn-rojo:hover{
+    cursor:pointer;
+    background-color:rgb(220, 127, 127) ;
 
   }
