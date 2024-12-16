@@ -24,7 +24,7 @@ formulario.addEventListener("submit", event => {
     const errorApellido = document.getElementById("errorApellido"); 
     //veo que guarda
     console.log(errorApellido);
-    const errorEmail = document.getElementById("errorMail");
+    const errorEmail = document.getElementById("errorEmail");
     const errorMensaje = document.getElementById("errorMensaje");
 
     // Inicializar validación
@@ -38,11 +38,11 @@ formulario.addEventListener("submit", event => {
         errorNombre.classList.add("errorForm");
     }
     // Validar apellido
-    if (nombre === "") {
-        errorNombre.classList.remove("errorForm");
+    if (apellido === "") {
+        errorApellido.classList.remove("errorForm");
         formularioValido = false;
     } else {
-        errorNombre.classList.add("errorForm");
+        errorApellido.classList.add("errorForm");
     }
 
     // Validar email con expresiones regulares
